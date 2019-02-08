@@ -1,0 +1,111 @@
+Verificação detalhada de arquivos excluidos, alterados, modificados
+git whatchanged
+* Mostra a mensagem de commit
+* Mostra quais arquivos foram alterados
+
+Adição interativa de arquivos modificados
+git add -i
+
+git whatchanged -p
+* Mostra o que foi alterado no arquivo a cada commit
+* Mostra as linhas que foram modificadas
+
+git push origin -u branch
+O -u indica para o GIT que a branch remota deve ser igual a branch do repositorio
+
+git branch
+Mostra as branchs locais
+
+git branch -r
+mostra as branchs remotas
+
+Associando uma branch remota a uma nova branch da maquina
+git branch -t branchMaquina origin/branchRemota
+
+git branch -a
+Mostra as branchs locais e remotas
+
+
+git checkout -t origin/design
+Tudo no mesmo comando:
+
+Copia de uma branch remota
+
+1- Criação de uma branch local com o mesmo nome da branch remota
+2- Mudança para essa nova branch criada
+3- Criação de link entre a branch local e remota
+
+
+git push -d origin design
+git push origin :design
+
+Comandos para deletar uma branch remota
+
+
+git fetch origin
+
+Este comando verifica todas as atualizações que foram realizadas no repositório de atalho origin.
+
+
+git checkout -b nomeDabranchQueDesejaCriar
+Esse comando cria a branch e automaticamente entre nela.
+
+
+git merge nomeDaBranch
+Traz o commit da branch para a branch atual
+
+
+git rebase branchBase branchQueSeraAtualizada
+O comando atualiza uma branch com base em outra
+
+
+git rebase --continue
+Usado quando acontece um conflito ao tentar fazer o rebase ( o conflito deve ser resolvido e aí entao usar o comando git rebase --continue)
+
+git checkout nomeDoArquivo
+Volta o arquivo ao estado do commit anterior
+
+git reset HEAD nomeDoArquivo
+Usado quando um arquivo é commitado, no entanto, deseja-se voltar a versão anterior ao commit atual.
+
+git revert + identificador do commit
+Desfaz o commit anterior
+
+git stash
+Aguarda as alterações que ainda nao foram comitadas
+
+git stash list
+Mostra o que tem dentro do stash
+
+git stash pop
+Retorna o ultimo comando da lista de stash
+
+git stash apply nomeDoStash
+Retorna um stash especifico
+
+git stash drop
+Descarta a alteração temporaria
+
+
+git bisect start
+Usado para procurar commits que se deseja alterar ou desfazer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
