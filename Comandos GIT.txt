@@ -92,7 +92,28 @@ Usado para procurar commits que se deseja alterar ou desfazer
 
 
 
+Criação de novos comandos no GIT
+Arquivo -> gitconfig
+vim ~/gitconfig
+~ significa diretorio do usuario 
 
+Configuração de visualização de commits
+git log --pretty = xx
+xx = oneline
+xx = short
+xx = full
+
+Mostra graficamente os caminhos que o repositorio foi seguindo
+git log --graph
+
+Criar uma copia do projeto
+fork
+
+Controle de alterações
+pull request - Informa ao dono do repositorio que ele possui novo commit de um outro usuario pendente de aceitação
+
+Pegando hash especifico para adicionar em uma outra branch
+git cherry-pick 
 
 
 
