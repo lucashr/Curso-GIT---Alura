@@ -1,9 +1,13 @@
-Verificação detalhada de arquivos excluidos, alterados, modificados
+ConfiguraÃ§Ã£o inicial
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+VerificaÃ§Ã£o detalhada de arquivos excluidos, alterados, modificados
 git whatchanged
 * Mostra a mensagem de commit
 * Mostra quais arquivos foram alterados
 
-Adição interativa de arquivos modificados
+AdiÃ§Ã£o interativa de arquivos modificados
 git add -i
 
 git whatchanged -p
@@ -31,9 +35,9 @@ Tudo no mesmo comando:
 
 Copia de uma branch remota
 
-1- Criação de uma branch local com o mesmo nome da branch remota
-2- Mudança para essa nova branch criada
-3- Criação de link entre a branch local e remota
+1- CriaÃ§Ã£o de uma branch local com o mesmo nome da branch remota
+2- MudanÃ§a para essa nova branch criada
+3- CriaÃ§Ã£o de link entre a branch local e remota
 
 
 git push -d origin design
@@ -44,7 +48,7 @@ Comandos para deletar uma branch remota
 
 git fetch origin
 
-Este comando verifica todas as atualizações que foram realizadas no repositório de atalho origin.
+Este comando verifica todas as atualizaÃ§Ãµes que foram realizadas no repositÃ³rio de atalho origin.
 
 
 git checkout -b nomeDabranchQueDesejaCriar
@@ -60,19 +64,19 @@ O comando atualiza uma branch com base em outra
 
 
 git rebase --continue
-Usado quando acontece um conflito ao tentar fazer o rebase ( o conflito deve ser resolvido e aí entao usar o comando git rebase --continue)
+Usado quando acontece um conflito ao tentar fazer o rebase ( o conflito deve ser resolvido e aÃ­ entao usar o comando git rebase --continue)
 
 git checkout nomeDoArquivo
 Volta o arquivo ao estado do commit anterior
 
 git reset HEAD nomeDoArquivo
-Usado quando um arquivo é commitado, no entanto, deseja-se voltar a versão anterior ao commit atual.
+Usado quando um arquivo Ã© commitado, no entanto, deseja-se voltar a versÃ£o anterior ao commit atual.
 
 git revert + identificador do commit
 Desfaz o commit anterior
 
 git stash
-Aguarda as alterações que ainda nao foram comitadas
+Aguarda as alteraÃ§Ãµes que ainda nao foram comitadas
 
 git stash list
 Mostra o que tem dentro do stash
@@ -84,7 +88,7 @@ git stash apply nomeDoStash
 Retorna um stash especifico
 
 git stash drop
-Descarta a alteração temporaria
+Descarta a alteraÃ§Ã£o temporaria
 
 
 git bisect start
@@ -92,12 +96,12 @@ Usado para procurar commits que se deseja alterar ou desfazer
 
 
 
-Criação de novos comandos no GIT
+CriaÃ§Ã£o de novos comandos no GIT
 Arquivo -> gitconfig
 vim ~/gitconfig
 ~ significa diretorio do usuario 
 
-Configuração de visualização de commits
+ConfiguraÃ§Ã£o de visualizaÃ§Ã£o de commits
 git log --pretty = xx
 xx = oneline
 xx = short
@@ -109,8 +113,8 @@ git log --graph
 Criar uma copia do projeto
 fork
 
-Controle de alterações
-pull request - Informa ao dono do repositorio que ele possui novo commit de um outro usuario pendente de aceitação
+Controle de alteraÃ§Ãµes
+pull request - Informa ao dono do repositorio que ele possui novo commit de um outro usuario pendente de aceitaÃ§Ã£o
 
 Pegando hash especifico para adicionar em uma outra branch
 git cherry-pick 
