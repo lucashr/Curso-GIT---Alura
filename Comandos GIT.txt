@@ -2,6 +2,14 @@ Configuração inicial
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 
+Criando um repositorio via linha de comando
+echo "# teste-de-software" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/lucashr/nomeRepositorio.git
+git push -u origin master
+
 Verificação detalhada de arquivos excluidos, alterados, modificados
 git whatchanged
 * Mostra a mensagem de commit
