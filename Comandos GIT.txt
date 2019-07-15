@@ -129,6 +129,13 @@ git cherry-pick
 
 
 
+mv gitignore.gitignore .gitignore
+alterando o nome de um arquivo ( criando o gitignore apenas com a extensao )
+
+adicionando o gitignore ao projeto
+git add .gitignore
+
+
 
 
 
