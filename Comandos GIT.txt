@@ -135,6 +135,15 @@ alterando o nome de um arquivo ( criando o gitignore apenas com a extensao )
 adicionando o gitignore ao projeto
 git add .gitignore
 
+excluindo arquivos e pastas
+
+git rm nomeDoArquivo
+commite a mudança e depois faça um push
+
+git rm -r nomeDaPasta
+commite a mudança e depois faça um push
+
+
 
 
 
