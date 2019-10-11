@@ -144,7 +144,8 @@ git rm -r nomeDaPasta
 commite a mudança e depois faça um push
 
 
-
+git push origin HEAD --force
+Força o commit no repositorio remoto (Isto fará perder todas as alterações locais) faça um stash antes.
 
 
 
