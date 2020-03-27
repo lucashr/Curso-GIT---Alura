@@ -147,6 +147,8 @@ commite a mudança e depois faça um push
 git push origin HEAD --force
 Força o commit no repositorio remoto (Isto fará perder todas as alterações locais) faça um stash antes.
 
+git checkout HEAD~1
+Este comando muda o HEAD que é basicamente em qual estado o repositório está. Mudando para HEAD~1 estaremos no commit anterior ao HEAD atual.
 
 
 
